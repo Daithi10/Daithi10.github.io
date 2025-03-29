@@ -133,6 +133,18 @@ table, tr, th, td {
     background-color: #003866;
     border-radius: 8px;
     font-weight: bold;
+
+}
+.contact-form{
+    background-color: #003866;
+    color: white;
+    padding: 20px;
+    display: flex-right;
+    justify-content: center;
+    align-items: flex-end; 
+    justify-content: flex-start; 
+    margin-bottom: 30px;
+    border-radius: 8px;
 }
 .inner-footer-left,
 .inner-footer-center,
