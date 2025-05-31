@@ -13,13 +13,13 @@
         <div class="style-links">
             <a href="#">Home</a>
             <a href="#">Sports</a>
-            <a href="stat.html">Stats</a>
+            <a href="fanzone.html">Fanzone</a>
             <a href="#">Transfers</a>
-            <a href="contacts.html">Contact</a>
+            <a href="contact.html">Contact</a>
         </div>
     </div>
     <div class="page-header">
-        <h2>Trending News</h2>
+        <h2>Latest Headlines</h2>
     </div>
 <div class="flex-container-parent">
     <div class="flex-container resize-container">
@@ -42,26 +42,31 @@
         </div>
     </div>
 </div>
-
-    <div class="footer">
-        <form action="newsletter.php" method="post">
-            <div class="inner-footer-left">
-                <p>Subscribe to stay informed</p>
-                <input type="email" name="email" placeholder="Enter email address">
-                <button type="submit">Subscribe</button>
-            </div>
-            <div class="inner-footer-center">
-                <p>Get the latest news and updates</p>
-                <!-- <p>Follow us on</p> -->
-                <i class="fa fa-twitter"></i><a href="https://x.com">X</a>
-                <i class="fa fa-facebook-official"></i><a href="https://www.facebook.com">facebook</a>
-            </div>
-            <div class="inner-footer-right">
-                <p>&copy; 2025 DM Sports</p>
-                <p>All rights reserved</p>
-                <p>Privacy Policy</p>
-            </div>
-        </form>
+   <div class="footer">
+  <form action="newsletter.php" method="post">
+    <div class="inner-footer-left">
+      <p>Subscribe to stay informed</p>
+      <!-- <label for="Email" class="visually-hidden">Email Address</label> -->
+      <input type="email" id="email" name="email" placeholder="Enter email address" required>
+      <button type="submit">Subscribe</button>
     </div>
+    </form>
+
+    <div class="inner-footer-center">
+      <p>Get the latest news and updates</p>
+      <div class="social-links">
+        <a href="https://x.com" target="_blank" rel="noopener">
+          <i class="fa fa-twitter"></i> X
+        </a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener">
+          <i class="fa fa-facebook-official"></i> Facebook
+        </a>
+      </div>
+    </div>
+    <div class="inner-footer-right">
+    <p>© 2025 DM Sports. All rights reserved.</p>
+    </div>
+   </div>
+    <script src="script.js"></script>
  </body>
 </html>
