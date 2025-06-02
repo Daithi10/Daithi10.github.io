@@ -194,21 +194,23 @@ document.getElementById("fanCommentForm").addEventListener("submit", function (e
     }
   );
   // transfers section
+  document.addEventListener("DOMContentLoaded", () => {
   const transferNewsData = {
-  arsenal: "Arsenal signs a new striker from Portugal.",
-  chelsea: "Chelsea interested in a Ligue 1 defender.",
-  liverpool: "Liverpool confirm two midfield departures."
-  // Add more clubs here
-};
+    arsenal: "Arsenal signs a new striker from Portugal.",
+    chelsea: "Chelsea interested in a Ligue 1 defender.",
+    liverpool: "Liverpool confirm two midfield departures.",
+    "man-city": "Manchester City secure €60m deal for a Spanish winger.",
+    "man-united": "Manchester United part ways with two defenders.",
+    spurs: "Tottenham Hotspur make a bid for Serie A midfielder.",
+    // Add more clubs as needed
+  };
 
-document.addEventListener("DOMContentLoaded", () => {
   const clubSelect = document.getElementById("clubSelect");
   const newsBox = document.getElementById("transferNews");
 
   if (clubSelect && newsBox) {
     clubSelect.addEventListener("change", function () {
       const selectedClub = this.value;
-
       if (selectedClub && transferNewsData[selectedClub]) {
         newsBox.textContent = transferNewsData[selectedClub];
       } else if (selectedClub) {
@@ -219,4 +221,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
