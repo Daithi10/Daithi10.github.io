@@ -191,5 +191,32 @@ document.getElementById("fanCommentForm").addEventListener("submit", function (e
       } else {
         status.textContent = ""; // Clear error if valid
       }
-    })
+    }
+  );
+  // transfers section
+  const transferNewsData = {
+  arsenal: "Arsenal signs a new striker from Portugal.",
+  chelsea: "Chelsea interested in a Ligue 1 defender.",
+  liverpool: "Liverpool confirm two midfield departures."
+  // Add more clubs here
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const clubSelect = document.getElementById("clubSelect");
+  const newsBox = document.getElementById("transferNews");
+
+  if (clubSelect && newsBox) {
+    clubSelect.addEventListener("change", function () {
+      const selectedClub = this.value;
+
+      if (selectedClub && transferNewsData[selectedClub]) {
+        newsBox.textContent = transferNewsData[selectedClub];
+      } else if (selectedClub) {
+        newsBox.textContent = "No current transfer news for this club.";
+      } else {
+        newsBox.textContent = "";
+      }
+    });
+  }
+});
 

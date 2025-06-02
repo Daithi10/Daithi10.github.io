@@ -422,3 +422,85 @@ form button:hover {
     padding: 10px;
   }
 }
+.transfers {
+  padding: 2rem;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.transfers h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #003866; /* Dark blue */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  max-width: 500px;
+}
+
+.transfer-news-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-left: 4px solid #003866; /* Dark blue accent */
+  font-style: italic;
+  max-width: 700px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* --- Responsive Tweaks --- */
+@media (max-width: 768px) {
+  .transfers {
+    padding: 1.5rem;
+  }
+
+  .transfers h2 {
+    font-size: 1.5rem;
+  }
+
+  select {
+    font-size: 0.95rem;
+  }
+
+  .transfer-news-box {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .transfers {
+    padding: 1rem;
+  }
+
+  .transfers h2 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  label {
+    font-size: 0.95rem;
+  }
+
+  select {
+    font-size: 0.9rem;
+  }
+
+  .transfer-news-box {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+};
